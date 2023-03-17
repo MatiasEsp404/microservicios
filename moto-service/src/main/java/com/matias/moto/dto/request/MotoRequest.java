@@ -12,7 +12,8 @@ import lombok.Setter;
 @AllArgsConstructor
 @Builder
 public class MotoRequest {
-	private String brand;
-	private String model;
-	private Integer userId;
+
+  private String brand;
+  private String model;
+  private Integer userId;
 }

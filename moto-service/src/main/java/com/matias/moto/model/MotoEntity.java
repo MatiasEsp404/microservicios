@@ -20,13 +20,14 @@ import lombok.Setter;
 @AllArgsConstructor
 @Builder
 public class MotoEntity {
-	@Id
-	@GeneratedValue(strategy = GenerationType.IDENTITY)
-	private Integer id;
-	@Column(nullable = false)
-	private String brand;
-	@Column(nullable = false)
-	private String model;
-	@Column
-	private Integer userId;
+
+  @Id
+  @GeneratedValue(strategy = GenerationType.IDENTITY)
+  private Integer id;
+  @Column(nullable = false)
+  private String brand;
+  @Column(nullable = false)
+  private String model;
+  @Column
+  private Integer userId;
 }

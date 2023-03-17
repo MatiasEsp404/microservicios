@@ -1,7 +1,6 @@
 package com.matias.moto.dto.response;
 
 import java.util.List;
-
 import lombok.AllArgsConstructor;
 import lombok.Builder;
 import lombok.Getter;
@@ -14,8 +13,9 @@ import lombok.Setter;
 @AllArgsConstructor
 @Builder
 public class ErrorResponse {
-	private Integer statusCode;
-	private String message;
-	private List<String> moreInfo;
+
+  private Integer statusCode;
+  private String message;
+  private List<String> moreInfo;
 
 }
