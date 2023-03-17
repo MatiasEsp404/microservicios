@@ -12,8 +12,9 @@ import lombok.Setter;
 @AllArgsConstructor
 @Builder
 public class CarResponse {
-	private Integer id;
-	private String brand;
-	private String model;
-	private Integer userId;
+
+  private Integer id;
+  private String brand;
+  private String model;
+  private Integer userId;
 }

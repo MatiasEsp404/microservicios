@@ -1,13 +1,11 @@
 package com.matias.car.exception;
 
+import com.matias.car.dto.response.ErrorResponse;
 import java.util.List;
-
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.ControllerAdvice;
 import org.springframework.web.bind.annotation.ExceptionHandler;
-
-import com.matias.car.dto.response.ErrorResponse;
 
 @ControllerAdvice
 public class GlobalExceptionHandler {
