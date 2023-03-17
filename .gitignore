@@ -1,0 +1,45 @@
+
+
+
+# car-service
+
+car-service/target/
+car-service/pom.xml.tag
+car-service/pom.xml.releaseBackup
+car-service/pom.xml.versionsBackup
+car-service/pom.xml.next
+car-service/release.properties
+car-service/dependency-reduced-pom.xml
+car-service/buildNumber.properties
+car-service/.mvn/timing.properties
+car-service/.mvn/wrapper/maven-wrapper.jar
+
+
+
+# moto-service
+
+moto-service/target/
+moto-service/pom.xml.tag
+moto-service/pom.xml.releaseBackup
+moto-service/pom.xml.versionsBackup
+moto-service/pom.xml.next
+moto-service/release.properties
+moto-service/dependency-reduced-pom.xml
+moto-service/buildNumber.properties
+moto-service/.mvn/timing.properties
+moto-service/.mvn/wrapper/maven-wrapper.jar
+
+
+
+# user-auth-service
+
+user-auth-service/target/
+user-auth-service/pom.xml.tag
+user-auth-service/pom.xml.releaseBackup
+user-auth-service/pom.xml.versionsBackup
+user-auth-service/pom.xml.next
+user-auth-service/release.properties
+user-auth-service/dependency-reduced-pom.xml
+user-auth-service/buildNumber.properties
+user-auth-service/.mvn/timing.properties
+user-auth-service/.mvn/wrapper/maven-wrapper.jar
