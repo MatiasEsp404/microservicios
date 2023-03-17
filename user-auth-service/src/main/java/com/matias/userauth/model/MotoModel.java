@@ -15,5 +15,5 @@ public class MotoModel {
 
   private String brand;
   private String model;
-  
+
 }

@@ -1,23 +1,22 @@
 package com.matias.userauth.service;
 
+import com.matias.userauth.dto.requests.UserRequest;
+import com.matias.userauth.dto.responses.UserResponse;
+import com.matias.userauth.entity.UserEntity;
 import com.matias.userauth.exception.EntityNotFoundException;
+import com.matias.userauth.mapper.UserMapper;
+import com.matias.userauth.model.CarModel;
+import com.matias.userauth.model.MotoModel;
+import com.matias.userauth.repository.IUserRepository;
+import com.matias.userauth.service.abs.IUserService;
 import java.util.List;
 import java.util.Optional;
-
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.core.ParameterizedTypeReference;
 import org.springframework.http.HttpMethod;
 import org.springframework.http.ResponseEntity;
 import org.springframework.stereotype.Service;
 import org.springframework.web.client.RestTemplate;
-import com.matias.userauth.dto.requests.UserRequest;
-import com.matias.userauth.dto.responses.UserResponse;
-import com.matias.userauth.entity.UserEntity;
-import com.matias.userauth.mapper.UserMapper;
-import com.matias.userauth.model.CarModel;
-import com.matias.userauth.model.MotoModel;
-import com.matias.userauth.repository.IUserRepository;
-import com.matias.userauth.service.abs.IUserService;
 
 @Service
 public class UserService implements IUserService {
@@ -59,22 +58,24 @@ public class UserService implements IUserService {
   @Override
   public List<CarModel> getCars(Integer id) {
     ResponseEntity<List<CarModel>> response = restTemplate.exchange(
-        "http://localhost:8082/api/car/user/" + id, 
-        HttpMethod.GET, 
+        "http://localhost:8082/api/car/user/" + id,
+        HttpMethod.GET,
         null,
-        new ParameterizedTypeReference<List<CarModel>>() {}
-        );
+        new ParameterizedTypeReference<List<CarModel>>() {
+        }
+    );
     return response.getBody();
   }
 
   @Override
   public List<MotoModel> getMotos(Integer id) {
     ResponseEntity<List<MotoModel>> response = restTemplate.exchange(
-        "http://localhost:8083/api/moto/user/" + id, 
-        HttpMethod.GET, 
+        "http://localhost:8083/api/moto/user/" + id,
+        HttpMethod.GET,
         null,
-        new ParameterizedTypeReference<List<MotoModel>>() {}
-        );
+        new ParameterizedTypeReference<List<MotoModel>>() {
+        }
+    );
     return response.getBody();
   }
 

@@ -1,8 +1,8 @@
 package com.matias.userauth.repository;
 
+import com.matias.userauth.entity.UserEntity;
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.stereotype.Repository;
-import com.matias.userauth.entity.UserEntity;
 
 @Repository
 public interface IUserRepository extends JpaRepository<UserEntity, Integer> {

@@ -22,12 +22,12 @@ import lombok.Setter;
 @Builder
 public class UserEntity {
 
-	@Id
-	@GeneratedValue(strategy = GenerationType.IDENTITY)
-	private Integer id;
-	@Column(nullable = false)
-	private String name;
-	@Column(unique = true, nullable = false)
-	private String email;
-	
+  @Id
+  @GeneratedValue(strategy = GenerationType.IDENTITY)
+  private Integer id;
+  @Column(nullable = false)
+  private String name;
+  @Column(unique = true, nullable = false)
+  private String email;
+
 }

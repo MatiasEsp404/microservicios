@@ -46,15 +46,15 @@ public class UserController {
         .toUri();
     return ResponseEntity.created(uri).body(response);
   }
-  
+
   @GetMapping(path = "/cars/{id}")
-  public ResponseEntity<List<CarModel>> getCars(@PathVariable Integer id){
+  public ResponseEntity<List<CarModel>> getCars(@PathVariable Integer id) {
     List<CarModel> cars = userService.getCars(id);
     return ResponseEntity.ok(cars);
   }
-  
+
   @GetMapping(path = "/motos/{id}")
-  public ResponseEntity<List<MotoModel>> getMotos(@PathVariable Integer id){
+  public ResponseEntity<List<MotoModel>> getMotos(@PathVariable Integer id) {
     List<MotoModel> motos = userService.getMotos(id);
     return ResponseEntity.ok(motos);
   }

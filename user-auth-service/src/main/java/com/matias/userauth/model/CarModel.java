@@ -15,5 +15,5 @@ public class CarModel {
 
   private String brand;
   private String model;
-  
+
 }
